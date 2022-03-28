@@ -7,6 +7,7 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
+
   },
   {
     sequelize,
@@ -18,3 +19,7 @@ Category.init(
 );
 
 module.exports = Category;
+
+
+
+
