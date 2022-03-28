@@ -16,6 +16,11 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
+// Test route to prove express server is running
+app.get('/test', (_req, res) => {
+  res.send('hello people')
+})
+
 // sync sequelize models to the database, then turn on the server
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
